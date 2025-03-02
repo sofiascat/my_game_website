@@ -13,29 +13,34 @@ A web platform for hosting and showcasing games developed with Python and Pygame
 
 ```
 game-hub/
-├── app.py                 # Flask application
-├── requirements.txt       # Python dependencies
-├── games/                 # Game source code
-│   └── snake/             # Snake game
-│       └── snake_game.py  # Pygame version of Snake
-├── static/                # Static files
-│   ├── css/               # CSS stylesheets
-│   │   └── style.css      # Main stylesheet
-│   ├── js/                # JavaScript files
-│   │   ├── main.js        # Main JavaScript
-│   │   └── snake.js       # Web version of Snake game
-│   └── images/            # Image assets
-│       ├── hero-bg.jpg    # Hero background
+├── index.html            # Main landing page for GitHub Pages
+├── about.html            # About page
+├── 404.html              # Custom 404 error page
+├── games/                # Game pages
+│   └── snake.html        # Snake game page
+├── app.py                # Flask application (for local development)
+├── requirements.txt      # Python dependencies
+├── games/                # Game source code
+│   └── snake/            # Snake game
+│       └── snake_game.py # Pygame version of Snake
+├── static/               # Static files
+│   ├── css/              # CSS stylesheets
+│   │   └── style.css     # Main stylesheet
+│   ├── js/               # JavaScript files
+│   │   ├── main.js       # Main JavaScript
+│   │   └── snake.js      # Web version of Snake game
+│   └── images/           # Image assets
+│       ├── hero-bg.jpg   # Hero background
 │       └── snake_thumbnail.jpg  # Snake game thumbnail
-└── templates/             # HTML templates
-    ├── base.html          # Base template
-    ├── index.html         # Home page
-    ├── about.html         # About page
-    ├── game.html          # Game page
-    └── 404.html           # Error page
+└── templates/            # HTML templates (for Flask)
+    ├── base.html         # Base template
+    ├── index.html        # Home page
+    ├── about.html        # About page
+    ├── game.html         # Game page
+    └── 404.html          # Error page
 ```
 
-## Setup and Installation
+## Local Development Setup
 
 1. Clone the repository:
    ```
@@ -67,6 +72,22 @@ game-hub/
    http://localhost:5000
    ```
 
+## GitHub Pages Deployment
+
+This project is configured to be hosted on GitHub Pages. The static HTML files in the root directory are served directly by GitHub Pages:
+
+1. Push your code to a GitHub repository:
+   ```
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+2. Go to your GitHub repository settings
+3. Scroll down to the "GitHub Pages" section
+4. Select the branch you want to deploy (usually `main`)
+5. Your site will be published at `https://yourusername.github.io/repository-name/`
+
 ## Adding New Games
 
 To add a new game to the platform:
@@ -74,19 +95,9 @@ To add a new game to the platform:
 1. Create a new directory in the `games/` folder for your game
 2. Develop your Pygame game
 3. Convert it to a web-compatible format (using p5.js or another web framework)
-4. Add the game details to the `GAMES` list in `app.py`
-5. Create a template for your game in the `templates/` directory if needed
+4. Add the game details to the `GAMES` list in `app.py` (for local development)
+5. Create an HTML file for your game in the `games/` directory for GitHub Pages
 6. Add any necessary static files (images, JavaScript, etc.)
-
-## Deployment
-
-To deploy the website to a production server:
-
-1. Choose a hosting provider (e.g., Heroku, PythonAnywhere, AWS)
-2. Set up a production server (e.g., Gunicorn)
-3. Configure a web server (e.g., Nginx) to serve static files
-4. Set up a domain name and SSL certificate
-5. Deploy your code to the server
 
 ## License
 
@@ -96,4 +107,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Pygame for the game development framework
 - Flask for the web framework
-- p5.js for the web-based game implementation 
+- p5.js for the web-based game implementation
+- GitHub Pages for hosting 

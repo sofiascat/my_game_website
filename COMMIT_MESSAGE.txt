@@ -1,0 +1,12 @@
+Prepare Game Hub for GitHub Pages deployment
+
+This commit includes:
+- HTML files in root directory for GitHub Pages
+- Updated README.md with GitHub Pages deployment instructions
+- Added 404.html custom error page
+- Created GitHub Actions workflow for automated deployment
+- Added placeholder for CNAME configuration
+- Organized static assets for web deployment
+- Added documentation for image placeholders
+
+The site is now ready to be deployed to GitHub Pages! 
