@@ -8,6 +8,12 @@ A web platform for hosting and showcasing games developed with Python and Pygame
 - Game showcase with descriptions
 - Playable games directly in the browser
 - About page with project information
+- Multiple games for different age groups
+
+## Available Games
+
+1. **Snake Game** - Classic Snake game with adjustable speed settings
+2. **Balloon Popper** - A colorful game for young children where a bird pops balloons
 
 ## Project Structure
 

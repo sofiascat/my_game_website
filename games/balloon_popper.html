@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon Popper - Game Hub</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.js"></script>
+    <style>
+        #game-canvas {
+            width: 100%;
+            height: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">Game Hub</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="game-page">
+                <h1>Balloon Popper</h1>
+                
+                <div class="game-container">
+                    <div id="game-canvas"></div>
+                    <div class="game-controls">
+                        <h3>Controls</h3>
+                        <p>Use the arrow keys to move the bird.</p>
+                        <p>Fly into balloons to pop them!</p>
+                        <p>Pop 15 balloons to win the game.</p>
+                        <p>Have fun and enjoy the colorful balloons!</p>
+                    </div>
+                </div>
+                
+                <div class="game-description">
+                    <h2>About This Game</h2>
+                    <p>A fun and colorful game designed for young children. Control a cheerful bird as it flies through the sky, popping balloons of different colors. The simple controls and bright visuals make it perfect for kids as young as 6 years old.</p>
+                    <a href="../index.html" class="btn">Back to Games</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Game Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/balloon_popper.js"></script>
+    <script>
+        // Ensure the game initializes properly
+        console.log("Balloon Popper page loaded");
+        window.addEventListener('load', function() {
+            console.log("Window loaded, game should initialize");
+        });
+    </script>
+</body>
+</html> 

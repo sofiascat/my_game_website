@@ -1,4 +1,4 @@
-Prepare Game Hub for GitHub Pages deployment
+Prepare Game Hub for GitHub Pages deployment and add Balloon Popper game
 
 This commit includes:
 - HTML files in root directory for GitHub Pages
@@ -8,5 +8,7 @@ This commit includes:
 - Added placeholder for CNAME configuration
 - Organized static assets for web deployment
 - Added documentation for image placeholders
+- Added new Balloon Popper game for young children
+- Updated index.html to showcase both games
 
 The site is now ready to be deployed to GitHub Pages! 

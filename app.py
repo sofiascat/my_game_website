@@ -11,6 +11,13 @@ GAMES = [
         "description": "Classic Snake game where you control a snake to eat food and grow without hitting walls or yourself. Features three difficulty levels with adjustable speed settings for players of all skill levels.",
         "image": "snake_thumbnail.jpg",
         "play_url": "/games/snake"
+    },
+    {
+        "id": "balloon_popper",
+        "title": "Balloon Popper",
+        "description": "A fun and colorful game designed for young children. Control a cheerful bird as it flies through the sky, popping balloons of different colors. The simple controls and bright visuals make it perfect for kids as young as 6 years old.",
+        "image": "balloon_popper_thumbnail.jpg",
+        "play_url": "/games/balloon_popper"
     }
 ]
 
