@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Game Hub</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">Game Hub</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="game-page">
+                <h1>Snake Game</h1>
+                
+                <div class="game-container">
+                    <div id="game-canvas"></div>
+                    <div class="game-controls">
+                        <h3>Controls</h3>
+                        <p>Use the arrow keys to control the snake.</p>
+                        <p>Collect the red food to grow and increase your score.</p>
+                        <p>Avoid hitting the walls or yourself!</p>
+                        <p>Press 'R' to restart after game over.</p>
+                        <h3>Speed Settings</h3>
+                        <p>Click the speed buttons or use number keys to change speed:</p>
+                        <ul>
+                            <li>Slow (1): For beginners</li>
+                            <li>Medium (2): Default speed</li>
+                            <li>Fast (3): For experts</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="game-description">
+                    <h2>About This Game</h2>
+                    <p>Classic Snake game where you control a snake to eat food and grow without hitting walls or yourself. Features three difficulty levels with adjustable speed settings for players of all skill levels.</p>
+                    <a href="../index.html" class="btn">Back to Games</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Game Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/snake.js"></script>
+</body>
+</html> 

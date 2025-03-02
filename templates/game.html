@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}{{ game.title }} - Game Hub{% endblock %}
+
+{% block extra_head %}
+{% if game.id == "snake" %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<section class="game-page">
+    <h1>{{ game.title }}</h1>
+    
+    <div class="game-container">
+        {% if game.id == "snake" %}
+        <div id="game-canvas"></div>
+        <div class="game-controls">
+            <h3>Controls</h3>
+            <p>Use the arrow keys to control the snake.</p>
+            <p>Collect the red food to grow and increase your score.</p>
+            <p>Avoid hitting the walls or yourself!</p>
+            <p>Press 'R' to restart after game over.</p>
+            <h3>Speed Settings</h3>
+            <p>Click the speed buttons or use number keys to change speed:</p>
+            <ul>
+                <li>Slow (1): For beginners</li>
+                <li>Medium (2): Default speed</li>
+                <li>Fast (3): For experts</li>
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+    
+    <div class="game-description">
+        <h2>About This Game</h2>
+        <p>{{ game.description }}</p>
+        <a href="/" class="btn">Back to Games</a>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+{% if game.id == "snake" %}
+<script src="/static/js/snake.js"></script>
+{% endif %}
+{% endblock %} 

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Game Hub - Play Awesome Games{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Game Hub</h1>
+        <p>Your destination for fun and engaging games</p>
+    </div>
+</section>
+
+<section class="games-list">
+    <h2>Featured Games</h2>
+    <div class="games-grid">
+        {% for game in games %}
+        <div class="game-card">
+            <div class="game-image">
+                <img src="/static/images/{{ game.image }}" alt="{{ game.title }}">
+            </div>
+            <div class="game-info">
+                <h3>{{ game.title }}</h3>
+                <p>{{ game.description }}</p>
+                <a href="{{ game.play_url }}" class="btn play-btn">Play Now</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="about-section">
+    <h2>About Game Hub</h2>
+    <p>Game Hub is a collection of fun and engaging games developed for learning and entertainment purposes. New games are added regularly, so check back often!</p>
+    <a href="/about" class="btn">Learn More</a>
+</section>
+{% endblock %} 
