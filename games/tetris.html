@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris - Game Hub</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        #game-canvas {
+            width: 500px;
+            height: 600px;
+            margin: 0 auto;
+            background-color: #1a1a2e;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        .difficulty-btn {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .difficulty-btn:hover {
+            background-color: #7c4dff;
+            transform: translateY(-2px);
+        }
+        
+        .difficulty-btn.active {
+            background-color: #03dac6;
+        }
+        
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #2a2a4a 0%, #1a1a2e 100%);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .game-controls {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 300px;
+        }
+        
+        .game-controls h3 {
+            color: #03dac6;
+            border-bottom: 2px solid #03dac6;
+            padding-bottom: 5px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        
+        .game-controls p {
+            margin: 4px 0;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .game-page h1 {
+            color: #6200ea;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        
+        .game-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">Game Hub</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="game-page">
+                <h1>Tetris</h1>
+                
+                <div class="game-container">
+                    <div id="game-canvas"></div>
+                    <div class="game-controls">
+                        <h3>Controls</h3>
+                        <div class="game-features">
+                            <p>Left/Right: Move</p>
+                            <p>Down: Move faster</p>
+                            <p>Up: Rotate</p>
+                            <p>Space: Hard drop</p>
+                            <p>H: Hold piece</p>
+                            <p>P: Pause game</p>
+                        </div>
+                        
+                        <h3>Difficulty Levels</h3>
+                        <div class="game-features">
+                            <p>Easy: Beginners</p>
+                            <p>Medium: Standard</p>
+                            <p>Hard: Expert</p>
+                        </div>
+                        
+                        <h3>Game Features</h3>
+                        <div class="game-features">
+                            <p>✨ Hold piece</p>
+                            <p>✨ Ghost piece</p>
+                            <p>✨ Next preview</p>
+                            <p>✨ Level system</p>
+                            <p>✨ High scores</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-description">
+                    <h2>About This Game</h2>
+                    <p>The classic Tetris game with a vibrant, sparkly twist! Arrange falling blocks to create complete lines and score points. Features three difficulty levels, colorful visuals, and special effects when clearing lines. The game now includes a beautiful starry background, hold piece functionality, and improved visual design!</p>
+                    <a href="../index.html" class="btn">Back to Games</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Game Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/tetris.js"></script>
+    <script>
+        // Ensure the game initializes properly
+        console.log("Tetris page loaded");
+        window.addEventListener('load', function() {
+            console.log("Window loaded, Tetris should initialize");
+        });
+    </script>
+</body>
+</html> 

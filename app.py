@@ -18,6 +18,13 @@ GAMES = [
         "description": "A fun and colorful game designed for young children. Control a cheerful bird as it flies through the sky, popping balloons of different colors. The simple controls and bright visuals make it perfect for kids as young as 6 years old.",
         "image": "balloon_popper_thumbnail.jpg",
         "play_url": "/games/balloon_popper"
+    },
+    {
+        "id": "tetris",
+        "title": "Tetris",
+        "description": "The classic Tetris game with a vibrant, sparkly twist! Arrange falling blocks to create complete lines and score points. Features three difficulty levels, colorful visuals, and special effects when clearing lines. Now with a beautiful starry background, hold piece functionality, ghost piece preview, and high score tracking!",
+        "image": "tetris_thumbnail.jpg",
+        "play_url": "/games/tetris"
     }
 ]
 
