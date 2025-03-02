@@ -109,7 +109,8 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     /* background: linear-gradient(rgb(245, 245, 245), rgb(248, 246, 246)), url('/static/images/hero-bg.jpg'); */
-    background: url('/static/images/hero-bg.jpg');
+    /* background: url('/static/images/hero-bg.jpg'); */
+    background: url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     color: white;
