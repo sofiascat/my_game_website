@@ -88,6 +88,81 @@
         gap: 5px;
     }
 </style>
+{% elif game.id == "animal_dressup" %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.js"></script>
+<style>
+    #game-canvas {
+        width: 800px;
+        height: 600px;
+        margin: 0 auto;
+        background-color: #fff8fa;
+        border-radius: 8px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+    
+    .game-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(135deg, #ffcce6 0%, #ccf2ff 100%);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .game-controls {
+        background: rgba(255, 255, 255, 0.5);
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .game-controls h3 {
+        color: #9933cc;
+        border-bottom: 2px solid #9933cc;
+        padding-bottom: 5px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
+    .game-controls p {
+        margin: 8px 0;
+        color: #333;
+        font-size: 16px;
+    }
+    
+    .feature-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .feature-item {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .feature-icon {
+        width: 30px;
+        height: 30px;
+        background: #9933cc;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        color: white;
+        font-weight: bold;
+    }
+</style>
 {% endif %}
 {% endblock %}
 
@@ -141,6 +216,39 @@
                 <p>✨ Level system</p>
                 <p>✨ High scores</p>
             </div>
+            {% elif game.id == "animal_dressup" %}
+            <h3>How to Play</h3>
+            <p>Help your animal friend get ready for a fun adventure by dressing them up in cute outfits!</p>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">1</div>
+                    <p>Choose an animal character</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">2</div>
+                    <p>Select a fun theme</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">3</div>
+                    <p>Pick outfits and accessories</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">4</div>
+                    <p>Celebrate when you're done!</p>
+                </div>
+            </div>
+            
+            <h3>Controls</h3>
+            <p>Use your mouse to select animals, themes, and clothing items.</p>
+            <p>Click on tabs to switch between different clothing categories.</p>
+            <p>Click the "Celebrate!" button when you've finished dressing up your animal.</p>
+            
+            <h3>Game Features</h3>
+            <p>✨ Three adorable animal characters: Bunny, Kitty, and Puppy</p>
+            <p>✨ Three fun themes: Beach Day, Birthday Party, and Winter Fun</p>
+            <p>✨ Multiple clothing categories: Hats, Tops, Bottoms, Shoes, and Accessories</p>
+            <p>✨ Colorful celebration with confetti when your animal is ready!</p>
             {% endif %}
         </div>
     </div>
@@ -160,5 +268,7 @@
 <script src="/static/js/balloon_popper.js"></script>
 {% elif game.id == "tetris" %}
 <script src="/static/js/tetris.js"></script>
+{% elif game.id == "animal_dressup" %}
+<script src="/static/js/animal_dressup.js"></script>
 {% endif %}
 {% endblock %} 

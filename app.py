@@ -25,6 +25,13 @@ GAMES = [
         "description": "The classic Tetris game with a vibrant, sparkly twist! Arrange falling blocks to create complete lines and score points. Features three difficulty levels, colorful visuals, and special effects when clearing lines. Now with a beautiful starry background, hold piece functionality, ghost piece preview, and high score tracking!",
         "image": "tetris_thumbnail.jpg",
         "play_url": "/games/tetris"
+    },
+    {
+        "id": "animal_dressup",
+        "title": "Animal Dress-Up Adventure",
+        "description": "In Animal Dress-Up Adventure, the player helps a cute animal character prepare for various fun occasions by selecting outfits and accessories. The game is colorful, easy to use, and encourages creativity, making it ideal for a young child. With a drag-and-drop interface, cheerful sounds, and themed adventures, it offers a playful experience that's both entertaining and accessible.",
+        "image": "animal_dressup_thumbnail.jpg",
+        "play_url": "/games/animal_dressup"
     }
 ]
 
